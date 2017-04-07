@@ -1,0 +1,51 @@
+.btn {
+    background: none;
+    border: 0;
+    border-radius: $border-radius;
+    color: inherit;
+    cursor: pointer;
+    display: inline-block;
+    font-family: inherit;
+    font-size: $font-size--large;
+    outline: none;
+    padding: $padding;
+    position: relative;
+    text-transform: capitalize;
+    transition: all .3s;
+
+    &::after {
+        content: '';
+        position: absolute;
+        transition: all .3s;
+        z-index: -1;
+    }
+}
+
+.btn--block {
+    display: block;
+    width: 100%;
+}
+
+.btn--standard {
+    background: palette(grey, lightest);
+    box-shadow: 0 $box-shadow palette(grey, light);
+    color: palette(white);
+    transition: none;
+
+    &:hover {
+        box-shadow: 0 $box-shadow--small palette(grey, light);
+        top: 2px;
+    }
+}
+
+.btn--positive {
+    background: palette(green);
+    box-shadow: 0 $box-shadow palette(green, darker);
+    color: palette(white);
+    transition: none;
+
+    &:hover {
+        box-shadow: 0 $box-shadow--small palette(green, darker);
+        top: 2px;
+    }
+}

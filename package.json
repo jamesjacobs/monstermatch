@@ -1,0 +1,33 @@
+{
+  "name": "monster-match",
+  "version": "0.0.1",
+  "description": "Monster match pairs game",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "James Jacobs",
+  "license": "MIT",
+  "devDependencies": {
+    "audiosprite": "^0.6.0",
+    "browser-sync": "^2.12.10",
+    "browserify": "^13.0.1",
+    "chai": "^3.5.0",
+    "exorcist": "^0.4.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-jshint": "^2.0.1",
+    "gulp-sass": "^2.3.1",
+    "gulp-scss-lint": "^0.4.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-util": "^3.0.7",
+    "jshint": "^2.9.2",
+    "mocha": "^2.5.3",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.7.0"
+  },
+  "dependencies": {
+    "font-awesome": "^4.7.0",
+    "normalize.css": "^5.0.0"
+  }
+}

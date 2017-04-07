@@ -1,0 +1,96 @@
+// need to ensure height and width are equal
+// need to set brekpoints here, mobile starts at 320px then needs to go to  big iphone, tablet and desktop
+.tile-page-beginner .tile {
+    height: 46vw;
+    width: 46%;
+}
+
+.tile-page-easy .tile,
+.tile-page-medium .tile {
+    height: 29vw;
+    width: 29%;
+}
+
+.tile-page-hard .tile,
+.tile-page-monsterous .tile {
+    height: 21vw;
+    width: 21%;
+}
+
+.container {
+    perspective: 800px;
+    position: relative;
+    width: 100%;
+}
+
+.tile {
+    border: 2px solid palette(white);
+    border-radius: $box-shadow;
+    box-shadow: 0 $box-shadow--small $box-shadow 0 rgba(0, 0, 0, .75);
+    cursor: pointer;
+    float: left;
+    height: 100%;
+    margin: 2%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+    width: 100%;
+}
+
+.tile__front,
+.tile__back {
+    backface-visibility: hidden;
+    display: block;
+    height: 100%;
+    margin: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.tile__front {
+    background: url('../img/question-mark.png') center / 30% no-repeat;
+    color: palette(grey);
+    font-family: 'snigletregular';
+    text-align: center;
+    text-decoration: none;
+}
+
+.tile__back {
+    background: blue;
+    transform: rotateY(180deg);
+}
+
+.tile-page-beginner .tile__front {
+    background-color: palette(blue);
+}
+
+.tile-page-easy .tile__front {
+    background-color: palette(green);
+}
+
+.tile-page-medium .tile__front {
+    background-color: palette(orange);
+}
+
+.tile-page-hard .tile__front {
+    background-color: palette(red);
+}
+
+.tile-page-monsterous .tile__front {
+    background-color: palette(red, alt);
+}
+
+.tile--flipped {
+    transform: rotateY(180deg);
+    z-index: 1000;
+}
+
+.tile--matched {
+    animation-duration: 1s;
+    animation-name: rubberBand;
+}
+
+.tile__image {
+    height: 100%;
+    width: 100%;
+}

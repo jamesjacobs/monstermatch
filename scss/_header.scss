@@ -1,0 +1,76 @@
+.bar {
+    background-size: 0;
+    border-style: solid;
+    border-top: 1px solid transparent;
+    border-top-width: 0;
+    border-width: 0;
+    box-sizing: border-box;
+    display: flex;
+    height: 44px;
+    left: 0;
+    padding: $padding--small;
+    position: absolute;
+    right: 0;
+    user-select: none;
+    width: 100%;
+    z-index: 9;
+}
+
+.bar-header {
+    background-color: palette(grey, dark);
+    top: 0;
+}
+
+.bar__title {
+    background: url('../img/logo.png') center / 221px no-repeat;
+    color: palette(white);
+    font-family: 'snigletregular';
+    font-size: $font-size--medium;
+    font-weight: 500;
+    height: 43px;
+    left: 0;
+    line-height: 44px;
+    margin: 0 $margin;
+    min-width: 30px;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    text-indent: 100%;
+    text-overflow: ellipsis;
+    top: 0;
+    white-space: nowrap;
+    z-index: 0;
+
+    &.bar__title--has-header {
+        background: none;
+        text-indent: 0;
+        text-transform: capitalize;
+    }
+}
+
+.bar__timer {
+    color: palette(white);
+    font-family: 'snigletregular';
+    font-size: $font-size--medium;
+    font-weight: 500;
+    height: 43px;
+    line-height: 44px;
+    padding: 0 18px 0 0;
+    position: absolute;
+    right: 5px;
+    top: 0;
+    z-index: 1;
+}
+
+.bar__back {
+    color: palette(white);
+    cursor: pointer;
+    font-size: $font-size--medium;
+    font-weight: 400;
+    line-height: 36px;
+    min-height: 31px;
+    min-width: initial;
+    padding: 0 8px;
+    z-index: 1;
+}

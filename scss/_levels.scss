@@ -1,0 +1,79 @@
+.levels {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.level__item {
+    overflow: hidden;
+    position: relative;
+}
+
+.level__link {
+    border: 1px solid palette(white);
+    border-radius: $border-radius;
+    box-shadow: 0 $box-shadow--small $box-shadow 0 rgba(0, 0, 0, .75);
+    color: palette(white);
+    display: block;
+    margin-bottom: $margin--medium;
+    padding: $padding $padding--medium;
+    text-decoration: none;
+}
+
+.level__link--beginner {
+    background-color: palette(blue);
+    text-shadow: 0 2px 2px palette(blue, darker);
+}
+
+.level__link--easy {
+    background-color: palette(green);
+    text-shadow: 0 2px 2px palette(green, darker);
+}
+
+.level__link--medium {
+    background: palette(orange);
+    text-shadow: 0 2px 2px palette(orange, darker);
+}
+
+.level__link--hard {
+    background: palette(red);
+    text-shadow: 0 2px 2px palette(red, darker);
+}
+
+.level__link--monsterous {
+    background: url('../img/monsterous-bg-strips.png') palette(red, alt);
+    text-shadow: 0 2px 2px darken(palette(red, alt), 20%);
+}
+
+.level__title {
+    font-family: 'snigletregular';
+    font-size: 1.6rem;
+    font-weight: normal;
+    margin: 0 0 $margin;
+    text-transform: capitalize;
+}
+
+.level__sub-title {
+    font-family: 'snigletregular';
+    font-size: 1.2rem;
+    font-weight: normal;
+    margin: 0;
+}
+
+.level__img {
+    bottom: 16px;
+    max-height: 48.33px;
+    max-width: 100%;
+    position: absolute;
+    right: 10px;
+}
+
+.level__scores {
+    position: absolute;
+    right: 10px;
+    top: 12px;
+}
+
+.level__stars {
+    padding-left: $padding--small;
+}

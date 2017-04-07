@@ -1,0 +1,83 @@
+// Colours
+// -------------------------------
+
+$_color-base-blue:      rgb(105, 197, 228);
+$_color-base-green:     rgb(91, 198, 148);
+$_color-base-grey:      rgb(95, 105, 120);
+$_color-base-info:      rgb(177, 201, 223);
+$_color-base-orange:    rgb(253, 146, 41);
+$_color-base-red:       rgb(230, 103, 96);
+$_color-base-danger:    rgb(241, 56, 46);
+$_color-base-yellow:    rgb(255, 207, 71);
+
+$palettes: (
+    blue: (
+        base:       $_color-base-blue,
+        light:      lighten($_color-base-blue, 10%),
+        dark:       darken($_color-base-blue, 10%),
+        darker:     darken($_color-base-blue, 20%)
+    ),
+    green: (
+        base:       $_color-base-green,
+        light:      lighten($_color-base-green, 10%),
+        dark:       darken($_color-base-green, 10%),
+        darker:     darken($_color-base-green, 20%)
+    ),
+    grey: (
+        base:       $_color-base-grey,
+        lightest:   rgb(177, 201, 223),
+        light:      lighten($_color-base-grey, 10%),
+        dark:       rgb(69, 80, 96),
+        darker:     darken(rgb(69, 80, 96), 10%),
+        alt:        $_color-base-info
+    ),
+    orange: (
+        base:       $_color-base-orange,
+        light:      lighten($_color-base-orange, 10%),
+        dark:       darken($_color-base-orange, 10%),
+        darker:     darken($_color-base-orange, 20%)
+    ),
+    red: (
+        base:       $_color-base-red,
+        light:      lighten($_color-base-red, 10%),
+        dark:       darken($_color-base-red, 10%),
+        darker:     darken($_color-base-red, 20%),
+        alt:        $_color-base-danger
+    ),
+    yellow: (
+        base:       $_color-base-yellow,
+        light:      lighten($_color-base-yellow, 5%),
+        dark:       darken($_color-base-yellow, 10%),
+        darker:     darken($_color-base-yellow, 20%)
+    ),
+    white: (
+        base: rgb(255, 255, 255)
+    ),
+    black: (
+        base: rgb(0, 0, 0)
+    )
+);
+
+// Spacing
+// --------------------------------------------------------------------------------
+$padding:                         10px;
+$padding--small:                  ceil($padding / 2);
+$padding--medium:                 ceil($padding * 1.5);
+$padding--large:                  ceil($padding * 2);
+$margin:                          10px;
+$margin--small:                   ceil($padding / 2);
+$margin--medium:                  ceil($margin * 1.5);
+
+// Font sizing
+// --------------------------------------------------------------------------------
+$font-size--x-large:              40px;
+$font-size--large:                20px;
+$font-size--medium:               17px;
+
+
+// Misc
+// --------------------------------------------------------------------------------
+$border-radius:                   4px;
+$border-radius--large:            ceil($border-radius * 2);
+$box-shadow:                      4px;
+$box-shadow--small:               2px;

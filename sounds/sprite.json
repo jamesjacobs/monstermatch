@@ -1,0 +1,35 @@
+{
+  "resources": [
+    "sprite.ogg",
+    "sprite.m4a",
+    "sprite.mp3",
+    "sprite.ac3"
+  ],
+  "spritemap": {
+    "click": {
+      "start": 0,
+      "end": 0.4460090702947846,
+      "loop": false
+    },
+    "flip": {
+      "start": 2,
+      "end": 2.59734693877551,
+      "loop": false
+    },
+    "match": {
+      "start": 4,
+      "end": 4.6249886621315195,
+      "loop": false
+    },
+    "noMatch": {
+      "start": 6,
+      "end": 6.544353741496598,
+      "loop": false
+    },
+    "tada": {
+      "start": 8,
+      "end": 8.902925170068027,
+      "loop": false
+    }
+  }
+}
